@@ -21,8 +21,8 @@ from displayBoxes import display_bounding_boxes
 Authenticate
 Authenticates your credentials and creates a client.
 '''
-subscription_key = os.environ["VISION_KEY"] = "679351eb779d482b9c4bd1f965073403"
-endpoint = os.environ["VISION_ENDPOINT"] = "https://razvanix445.cognitiveservices.azure.com/"
+subscription_key = os.environ["VISION_KEY"]
+endpoint = os.environ["VISION_ENDPOINT"]
 computervision_client = ComputerVisionClient(endpoint, CognitiveServicesCredentials(subscription_key))
 '''
 END - Authenticate
@@ -99,7 +99,7 @@ def test():
     plt.show()
 
 if __name__ == "__main__":
-    # test()
+    test()
     # pb1(computervision_client) # 1 + 2a
     # pb2(computervision_client) # 2b + 2c
     # display_bounding_boxes("bike_images", "BikeImages-export2.csv", computervision_client)
