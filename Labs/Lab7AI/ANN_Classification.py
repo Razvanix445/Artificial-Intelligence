@@ -103,7 +103,7 @@ def ann_classification(real_images_paths, sepia_images_paths, modelType):
                                    verbose=1, random_state=1, learning_rate_init=.001)
         model.fit(train_inputs, train_outputs)
     else:
-        model = MyMLPClassifier(hidden_layer_sizes=(15,), activation='relu', max_iter=30 verbose=5, random_state=1,
+        model = MyMLPClassifier(hidden_layer_sizes=(15,), activation='relu', max_iter=30, verbose=5, random_state=1,
                                 learning_rate_init=.01)
         model.fit(train_inputs, train_outputs)
 
@@ -111,6 +111,7 @@ def ann_classification(real_images_paths, sepia_images_paths, modelType):
     # num_classes = 2
     # model = CNNModel(input_shape, num_classes)
     # model.train(train_inputs, train_outputs, learning_rate=0.001, epochs=10)
+    # CNN NOT WORKING
 
     predicted_labels = model.predict(test_inputs)
 

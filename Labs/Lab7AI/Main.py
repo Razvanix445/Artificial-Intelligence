@@ -1,5 +1,4 @@
 import ANN_Classification
-from CNN_manual import CNN_manual
 
 import warnings
 from sklearn.exceptions import ConvergenceWarning
@@ -36,8 +35,8 @@ if __name__ == '__main__':
     # Recall: 0.5306122448979592
     # F1 Score: 0.367891156462585
 
-    ANN_Classification.ann_classification(real_images_paths, sepia_images_paths, "manual")
-    # CNN_manual.CNN_manual(real_images_paths, sepia_images_paths)
+    ANN_Classification.ann_classification(real_images_paths, sepia_images_paths, "tool")
+    # CNN_manual.CNN_manual(real_images_paths, sepia_images_paths) NOT WORKING / NOT IMPLEMENTED
 
 
 
@@ -63,7 +62,7 @@ if __name__ == '__main__':
 
 
 
-    # big folder "images"
+    # big folder "images" BEST RESULTS (deleted folder because it had aprox. 70.000 images ^_^)
     # Iteration 1, loss = 0.60984309
     # Iteration 2, loss = 0.22052522
     # Iteration 3, loss = 0.14609409
