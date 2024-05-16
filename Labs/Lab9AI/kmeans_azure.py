@@ -7,8 +7,8 @@ from sklearn.metrics import accuracy_score
 
 # endpoint = os.environ["LANGUAGE_ENDPOINT"]
 # key = os.environ["LANGUAGE_KEY"]
-key = "a7889c503a0143029f903ff135f5125f"
-endpoint = "https://razvanix4455.cognitiveservices.azure.com/"
+key = ""
+endpoint = ""
 
 client = TextAnalyticsClient(endpoint=endpoint, credential=AzureKeyCredential(key))
 
